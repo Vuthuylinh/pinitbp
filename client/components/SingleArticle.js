@@ -10,7 +10,6 @@ class SingleArticle extends React.Component {
   }
   async componentDidMount() {
     console.log(`the beginning of componentdidmount`)
-    // const url = 'https://en.wikipedia.org/wiki/Groundhog_Day';
     let scrapedArticle = await axios.get(`/api/singleArticle/`)
     let article = scrapedArticle.data
     console.log(scrapedArticle, `do i exist??`, article)
